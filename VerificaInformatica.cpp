@@ -28,6 +28,10 @@ int main()
     
     //Preparo l'array, riempendolo di posti liberi;
     preparaArray(azienda, dim);
+
+    //visualizzo l'array vuoto:
+    printf("Visualizzo l'array vuoto:\n");
+    visualizzaPresenti(azienda, dim);
     
     //carico l'array con il primo dipendente:
     caricaElemento(azienda, dim, nome, cognome, 1290);
@@ -42,6 +46,7 @@ int main()
     caricaElemento(azienda, dim, nome2, cognome2, 1989);
     
     //verifico, visualizzando tutti i presenti;
+    printf("Visualizzo i dipendenti nell'array:\n");
     visualizzaPresenti(azienda, dim);
     
     //effettuo una ricerca per cognome su un dipendente che non è presente in lista:
