@@ -9,6 +9,8 @@ void visualizzaPresenti(Dipendente azienda[], int dim);
 void cancellaDipendente(Dipendente azienda[], int dim, char cognome[]);
 //funzione che permette di cercare un dipendente per cognome;
 void ricerca(Dipendente azienda[], int dim, char cognome[]);
+//funzione che stampa un menù con le istruzioni per l'utente;
+void menu();
 
 
 
