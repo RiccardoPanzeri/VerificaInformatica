@@ -58,6 +58,7 @@ void visualizzaPresenti(Dipendente azienda[], int dim) {
 
 void cancellaDipendente(Dipendente azienda[], int dim, char cognome[]) {
 	int vuoto = 1;//il booleano chesegnala se l'array è vuoto ha valore iniziale "vero";
+	int trovato = 0;
 	for (int i = 0; i < dim; i++) {
 		if (azienda[i].presente != 0) {
 			vuoto = 0;//se viene trovato almeno un elemento, il booleano vuoto viene impostato su "falso";
@@ -70,11 +71,16 @@ void cancellaDipendente(Dipendente azienda[], int dim, char cognome[]) {
 				strcpy_s(azienda[i].cognome, "");
 				azienda[i].stipendio = 0;
 				azienda[i].presente = 0;
+				trovato = 1;
 			}
 
 		}
-		printf("Elemento eliminato con successo!\n\n");
-
+		if (trovato == 1) {
+			printf("Elemento eliminato con successo!\n\n");
+		}
+		else {
+			printf("Non ci sono dipendenti con questo cognome!\n\n");
+		}
 	}
 	else {
 		printf("Non ci sono dipendenti presenti in lista!\n\n");
