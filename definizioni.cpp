@@ -77,7 +77,7 @@ void cancellaDipendente(Dipendente azienda[], int dim, char cognome[]) {
 
 	}
 	else {
-		printf("Non ci sono dipendenti presenti in lista!\n");
+		printf("Non ci sono dipendenti presenti in lista!\n\n");
 	}
 }
 

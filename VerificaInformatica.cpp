@@ -41,7 +41,7 @@ int main()
             printf("Dipendente inserito con successo!\n");
             break;
         case '2':
-            printf("Visualizzo i dipendenti presenti in lista:\n");
+            printf("Visualizzo i dipendenti presenti in lista:\n\n");
             visualizzaPresenti(azienda, dim);
             break;
         case '3':
